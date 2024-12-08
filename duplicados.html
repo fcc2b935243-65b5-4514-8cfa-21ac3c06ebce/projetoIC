@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="duplicados.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <title>MementoGallery - Fotos Duplicadas</title>
+</head>
+<body>
+<div class="container">
+  <div class="footer">
+  </div>
+  <div class="nav" id="header">
+      <a href="importar.html"><button>Importar Fotos</button></a>
+      <a href="todasFotos.html"><button>Todas as Fotos</button></a>
+      <a href="duplicados.html"><button>Duplicados</button></a>
+      <div id="pesquisa">
+        <input type="text" placeholder="Pesquisa de álbuns/fotos" id="input-pesquisa" readonly>
+
+        <button id="botao-pesquisa" class="disabled"><i class="material-symbols-outlined">search</i></button>
+      </div>
+    </div>
+  <div class="home">
+    <div class="homeIcon">      
+      <a href="index.html"><button><i class="material-symbols-outlined" id="homeBtn">home</i></button></a>
+    </div>
+  </div>
+  <div class="exit">
+    <div class="exitIcon">        
+        <button id="exitBtn"><span class="material-symbols-outlined">close</span></button> 
+    </div>
+  </div>
+  <div class="mainArea"> 
+    <div class="mainAreaContent">
+        <div class="listbox-area">
+        <div id="divModificar" class="left-area">
+            <span id="ms_av_l" class="listbox-label"><br>Todos os duplicados:</span>
+            <ul id="ms_imp_list" tabindex="0" role="listbox" aria-labelledby="ms_av_l" aria-multiselectable="true">
+            <li id="ms_opt1" role="option" aria-selected="false">
+                <span class="checkmark" aria-hidden="true"></span>
+                Opção 1
+            </li>
+            <li id="ms_opt2" role="option" aria-selected="false">
+                <span class="checkmark" aria-hidden="true"></span>
+                Opção 2
+            </li>
+            <li id="ms_opt3" role="option" aria-selected="false">
+                <span class="checkmark" aria-hidden="true"></span>
+                Opção 3
+            </li>
+            <li id="ms_opt4" role="option" aria-selected="false">
+                <span class="checkmark" aria-hidden="true"></span>
+                Opção 4
+            </li>
+            <li id="ms_opt5" role="option" aria-selected="false">
+                <span class="checkmark" aria-hidden="true"></span>
+                Opção 5
+            </li>
+            <li id="ms_opt6" role="option" aria-selected="false">
+                <span class="checkmark" aria-hidden="true"></span>
+                Opção 6
+            </li>
+            <li id="ms_opt7" role="option" aria-selected="false">
+                <span class="checkmark" aria-hidden="true"></span>
+                Opção 7
+            </li>
+            <li id="ms_opt8" role="option" aria-selected="false">
+                <span class="checkmark" aria-hidden="true"></span>
+                Opção 8
+            </li>
+            <li id="ms_opt9" role="option" aria-selected="false">
+                <span class="checkmark" aria-hidden="true"></span>
+                Opção 9
+            </li>
+            <li id="ms_opt10" role="option" aria-selected="false">
+                <span class="checkmark" aria-hidden="true"></span>
+                Opção 10
+            </li>
+            </ul>
+            <button type="button" id="ex2-add" class="move-right-btn" aria-keyshortcuts="Alt+ArrowRight Enter" aria-disabled="true">
+            <span class="checkmark" aria-hidden="true"></span>Adicionar</button>
+        </div>
+        <div class="right-area">
+            <span id="ms_ch_l" class="listbox-label"><br>Fotos a manter:</span>
+            <ul id="ms_unimp_list" tabindex="0" role="listbox" aria-labelledby="ms_ch_l" aria-activedescendant="" aria-multiselectable="true">
+            </ul>
+            <button type="button" id="ex2-delete" class="move-left-btn" aria-keyshortcuts="Alt+ArrowLeft Delete" aria-disabled="true">
+            <span class="checkmark" aria-hidden="true"></span>Retirar</button>
+            <button id="apagarDupesBtn">Apagar duplicados</button>
+            <a href="index.html"><button id="cancelarBtn">Cancelar</button></a> <!-- TODO mudar visual disto no pc -->
+        </div>
+        <div class="offscreen">Última mudança: <span aria-live="polite" id="ms_live_region"></span></div>
+        </div>
+    </div>
+  </div>
+</div>
+<script src="imagens.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="W3listboxRearrangeable.js"></script>
+<script src="duplicados.js"></script>
+<script src="geral.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="album.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <title>MementoGallery - Álbum</title>
+</head>
+<body>
+<div class="container">
+  <div class="footer">
+    <a href="index.html"><button>Página Inicial</button></a>
+    <a href="importar.html"><button>Importar Fotos</button></a>
+  </div>
+  <div class="main-area"></div>
+  <div class="header"></div>
+  <div class="nav" id="header">
+      <a href="importar.html"><button>Importar Fotos</button></a>
+      <a href="todasFotos.html"><button>Todas as Fotos</button></a>
+      <a href="duplicados.html"><button>Duplicados</button></a>
+      <div id="pesquisa">
+        <input type="text" placeholder="Pesquisa de álbuns/fotos" id="input-pesquisa" readonly>
+
+        <button id="botao-pesquisa" class="disabled"><i class="material-symbols-outlined disabled">search</i></button>
+      </div>
+    </div>
+  <div class="home">
+    <div class="homeIcon">      
+      <a href="index.html"><button><i class="material-symbols-outlined" id="homeBtn">home</i></button></a>
+    </div>
+  </div>
+  <div class="exit">
+    <div class="exitIcon">        
+      <button id="exitBtn"><span class="material-symbols-outlined">close</span></button> 
+    </div>
+  </div>
+  <div class="mainArea"> 
+    <div class="mainAreaContent">
+        <section id="albums">
+          <div id="replaceOne">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/150x150transparente.png">
+            <img alt="picture" src="imagens/150x150transparente.png">
+            <img alt="picture" src="imagens/150x150transparente.png">
+            <img alt="picture" src="imagens/150x150transparente.png">
+            <img alt="picture" src="imagens/150x150transparente.png">
+            <img alt="picture" src="imagens/150x150transparente.png">
+            <img alt="picture" src="imagens/150x150transparente.png">
+          </div>
+        </section>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="imagens.js"></script>
+<script src="geral.js"></script>
+<script src="album.js"></script>
+</body>
+</html>

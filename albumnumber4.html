@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="albumnumber.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link href="bootstrap.css" rel="stylesheet"> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> 
+
+    <title>MementoGallery - Importar</title>
+</head>
+<body>
+<div class="container">
+  <div id="footer" class="footer">
+  </div>
+  <div class="nav" id="header">
+      <a href="importar.html"><button>Importar Fotos</button></a>
+      <a href="todasFotos.html"><button>Todas as Fotos</button></a>
+      <a href="duplicados.html"><button>Duplicados</button></a>
+      <div id="pesquisa">
+        <input type="text" placeholder="Pesquisa de álbuns/fotos" id="input-pesquisa" readonly>
+
+        <button id="botao-pesquisa" class="disabled"><i class="material-symbols-outlined">search</i></button>
+      </div>
+    </div>
+  <div class="home">
+    <div class="homeIcon">      
+      <a href="index.html"><button><i class="material-symbols-outlined" id="homeBtn">home</i></button></a>
+    </div>
+  </div>
+  <div class="exit">
+    <div class="exitIcon">        
+        <button id="exitBtn"><span class="material-symbols-outlined">close</span></button> 
+    </div>
+  </div>
+  <div class="mainArea"> 
+    <div class="mainAreaContent">
+        <section id="import-container">
+          <div id="importPicsContainerContainer" class="displayPics">
+          </div>
+          <div id="informacaoAlbum">
+            <h2 id="informacaoAlbumTitle"><b>Informação</b></h2>
+            <section class="info">
+            <span class="material-symbols-outlined icones">badge</span>
+            <b>Nome do Álbum:</b>
+            <p>Nome aqui</p>
+            </section>
+            <section class="info">
+            <span class="material-symbols-outlined icones">calendar_add_on</span>            
+            <b>Data de Criação:</b>
+            <p>07-12-24</p>
+            </section>
+            <section class="info">
+            <span class="material-symbols-outlined icones">edit_calendar</span>
+            <b>Última alteração:</b>
+            <p>07-12-24</p>
+            </section>
+            <section class="info">
+            <span class="material-symbols-outlined icones">apps</span>
+            <b>Número de fotos:</b>
+            <p>Número</p>
+            </section>
+            <section class="info">
+            <span class="material-symbols-outlined icones">edit_note</span>
+            <b>Descrição do álbum:</b>
+            <p>Comentário</p>
+            </section>
+          </div>
+        </section>
+    </div>
+  </div>
+</div>
+<script src="imagens.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="geral.js"></script>
+<script src="albumnumber4.js"></script>
+</body>
+</html>

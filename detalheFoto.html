@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="detalheFoto.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <title>MementoGallery - Info da Foto</title>
+</head>
+<body>
+<div class="container">
+  <div class="footer"></div>
+  <div class="options-menu">
+    <div class="options">
+      <div class="optionsText">
+        <p><b>Câmera:</b> <span id="cameraUsada">Telemóvel</span></p>
+        <p><b>Resolução:</b> <span id="resolucaoFoto">300 dpi</p>
+        <p><b>Autor:</b> <span id="autorFoto">Bruna</span></p>  
+        <p><b>Data:</b> <span id="dataFoto">24-07-24</span></p>  
+        <p><b>Local:</b> <span id="localFoto">São Paulo</span></p>  
+        <p><b>Ocasião:</b> <span id="ocasiaoFoto">Festa</span></p>  
+        <p><b>Entidades:</b> <span id="entidadesFoto">Antônia, Juliana</span></p>  
+        <p><b>Tipo de foto:</b> <span id="tipoFoto">Plano Superior</span></p>  
+        <p><b>Emoções retratadas:</b> <span id="emocoesFoto">Feliz, Energia</span></p>  
+        <br><br><br><br><br>
+      <button class="alterarBtn">Alterar</button>
+      <button>Limpar</button>
+      </div>
+    </div>  
+    <div class="optionsHeader"><h2>Detalhes da Foto</h2></div>
+  </div>
+  <div class="nav" id="header">
+      <a href="importar.html"><button>Importar Fotos</button></a>
+      <button id="criarAlbumBtn" class="disabled">Criar Álbum</button>
+      <a href="todasFotos.html"><button>Todas as Fotos</button></a>
+      <div id="pesquisa">
+        <input type="text" placeholder="Pesquisa de álbuns/fotos" id="input-pesquisa" readonly>
+
+        <button id="botao-pesquisa" class="disabled"><i class="material-symbols-outlined">search</i></button>
+      </div>
+    </div>
+  <div class="home">
+    <div class="homeIcon">      
+      <a href="index.html"><button><i class="material-symbols-outlined" id="homeBtn">home</i></button></a>
+    </div>
+  </div>
+  <div class="exit">
+    <div class="exitIcon">        
+        <button id="exitBtn"><span class="material-symbols-outlined">close</span></button> 
+    </div>
+  </div>
+  <div class="mainAreaContent">
+    <section id="fotoDetalhada">
+        <div class="container-foto">
+          <img alt="foto" src="https://media.gettyimages.com/id/1365547577/pt/foto/the-sight-of-spring.jpg?s=2048x2048&w=gi&k=20&c=NppqQEFCqWkzhCVO7PWQoSMlu67WBWlWQ2AChWRURaE=">
+        </div>
+    </section>   
+    <section id="opcoesBtmContainer">
+      <div id="opcoesBtmIcons">
+        <i class="material-symbols-outlined iconCursor">heart_plus</i>
+        <i class="material-symbols-outlined iconCursor">edit</i>
+        <i class="material-symbols-outlined iconCursor">auto_stories</i>
+        <i class="material-symbols-outlined iconCursor">delete</i>
+      </div>
+      <div id="opcoesBtmText">
+        <p class="textCursor">Gostar</p>
+        <p class="textCursor" id="editar">Editar</p>
+        <p class="textCursor">Álbuns associados</p>
+        <p class="textCursor" id="apagar">Apagar</p>
+      </div>
+    </section>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="geral.js"></script>
+<script src="detalheFoto.js"></script>
+</body>
+</html>
